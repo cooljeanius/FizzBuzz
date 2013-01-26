@@ -22,7 +22,8 @@
 #define Buzz 5
 #define FizzBuzz 15
 
-int main (int number) { // I was using type "double" at first, but had to remove it once I switched from division to remainder (see below)
+int main (void) { // I was using type "double" at first, but had to remove it once I switched from division to remainder (see below)
+    int number;
     for (number = 1; number <= 100; number++) {
 		if (number % FizzBuzz == 0) { // using the "remainder" function instead of division because when I used division == 1, it only worked for the first time it hit a multiple of it
 			printf("FizzBuzz \n"); // putting the "FizzBuzz" statement first, because when I put it last, it would hit the "Fizz" conditional first and just print that instead
